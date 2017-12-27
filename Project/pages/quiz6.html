@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<HTML>
+<body>
+<head>
+    <script src="../assets/script/quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<div class="reflinks pink">
+<h2 class="quizHeader">Logging In To Remote Devices Quiz - Tutorial 6</h2>
+</div>
+	  	<div>
+	  		<p class="question">1. How do you connect to remote device? </p>
+
+	    	<ul>
+	    	<input class="answer" id= "q1a1" type="radio" name="q1" value="1">
+	        <label for="q1a1"> type 'remote' followed by the IP address of the device you'd like to connect to </label>
+	    	<br>
+	        <input class="answer" id= "q1a2" type="radio" name="q1" value="0">
+	        <label for= "q1a2">type 'scp' followed by the hostname of the device you'd like to connect to</label>
+	        <br>
+	        <input class="answer" id= "q1a3" type="radio" name="q1" value="0">
+	        <label for="q1a3">type 'connect to' followed by the IP address or the hostname of the device you'd like to connect to</label>
+	        <br>
+	        <input class="answer" id='q3a4'type="radio" name="q3" value="0">
+	        <label for = 'q3a4' id="correctString1">type 'ssh' followed by the IP address or the hostname you'd like to connect to</label>
+	    	</ul>
+    		</ul>
+	  	</div>
+	  	
+	  	<div>
+	  		<p class="question">2. Your password should not display on the screen as you type</p>
+
+	    	<ul>
+	        <input class="answer" id= "q2a1" type="radio" name="q2" value="1">
+	        <label for= "q2a1" id="correctString2">True</label>
+	        <br>
+	        <input class="answer" id= "q2a2" type="radio" name="q2" value="0">
+	        <label for= "q2a2">False</label>
+	    	</ul>
+	  	</div>
+
+	  	<div>
+	  		<p class="question">3. Once connected, to verify, which command would you use to view what location you are in on the remote machine?</p>
+
+	    	<ul>
+	        <input class="answer" id='q3a1' type="radio" name="q3" value="0">
+	        <label for='q3a1'>type 'whereami'</label>
+	        <br>
+	        <input class="answer" id='q3a2' type="radio" name="q3" value="1">
+	        <label for='q3a2'>type 'cd' </label>
+	        <br>
+	        <input class="answer" id='q3a3' type="radio" name="q3" value="0">
+	        <label for='q3a3'>type 'ls' </label>
+	        <br>
+	        <input class="answer" id='q3a4'type="radio" name="q3" value="0">
+	        <label for = 'q3a4' id="correctString3">type 'pwd' </label>
+	    	</ul>
+	    	</div>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz(6)"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+</div>
+</body>
+</html>

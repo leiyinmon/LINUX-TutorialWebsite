@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<HTML>
+<body>
+<head>
+    <script src="../assets/script/quiz.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/quiz.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+</head>
+<div class="reflinks blue">
+<h2 class="quizHeader">Remote File Management Quiz - Tutorial 7</h2>
+</div>
+	  	<div>
+	  		<p class="question">1. What does scp stand for?</p>
+
+	    	<ul>
+	    	<input class="answer" id= "q1a1" type="radio" name="q1" value="1">
+	        <label for="q1a1"> start copy process </label>
+	    	<br>
+	        <input class="answer" id= "q1a2" type="radio" name="q1" value="0">
+	        <label for= "q1a2">save copy process</label>
+	        <br>
+	        <input class="answer" id= "q1a3" type="radio" name="q1" value="0">
+	        <label for="q1a3" id="correctString1">secure copy</label>
+	        <br>
+	        <input class="answer" id='q3a4'type="radio" name="q3" value="0">
+	        <label for = 'q3a4'>stop copy</label>
+	    	</ul>
+    		</ul>
+	  	</div>
+	  	
+	  	<div>
+	  		<p class="question">2. A * in a filename indicates the type of a file</p>
+
+	    	<ul>
+	        <input class="answer" id= "q2a1" type="radio" name="q2" value="1">
+	        <label for= "q2a1">True</label>
+	        <br>
+	        <input class="answer" id= "q2a2" type="radio" name="q2" value="0">
+	        <label for= "q2a2" id="correctString2">False</label>
+	    	</ul>
+	  	</div>
+
+	  	<div>
+	  		<p class="question">3. 'scp stacysaccount@otherhost.com :/home/stacy/archive/image*.jpg /home/stacy/downloads' <br>
+	  		is proper syntax for a secure copy done from a remote machine to a local machine </p>
+			<ul>
+	        <input class="answer" id= "q2a1" type="radio" name="q2" value="1">
+	        <label for= "q3a1" id="correctString2">True</label>
+	        <br>
+	        <input class="answer" id= "q2a2" type="radio" name="q2" value="0">
+	        <label for= "q3a2">False</label>
+	    	</ul>
+	  	</div>
+
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz(7)"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+</div>
+</body>
+</html>
